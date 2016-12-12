@@ -1,0 +1,61 @@
+// BORDER BOX SIZING
+@include border-box-sizing;
+
+body {
+	font-family: $mainfont;
+	background-color: $blue;
+	color: $black;
+}
+
+#{headings()} {
+	font-size: 2em;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: $snow;
+	margin-bottom: 0.3em;
+}
+p {
+	line-height: 1.3;
+	margin-bottom: 0.5em;
+	color: darken($snow, 10%);
+}
+strong {
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

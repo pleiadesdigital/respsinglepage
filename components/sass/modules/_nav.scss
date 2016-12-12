@@ -1,0 +1,89 @@
+header {
+	#nav {
+		@include clearfix();
+		@include background-image(linear-gradient(top, darken($green, 15%), $green-light));
+		width: 100%;
+		.navbar {
+			@include container();
+			// BRAND
+			.brand {
+				@include span(4);
+				float: left;
+				font-weight: 500;
+				text-align: center;
+				text-transform: uppercase;
+				background: $black;
+				padding: 11px 0px;
+				a {
+					color: $snow;
+					text-decoration: none;
+					text-align: center;
+					display: inline-block;			
+					font-size: 1.5em;
+					@include breakpoint(max-width $small) {
+						font-size: 1.2em;
+						span {
+							display: none;
+						}
+					}
+				} //a
+			} //.brand
+			// LINKS
+			ul {
+				@include span(8 at 4);
+				padding: 0px;
+				li {
+					float: left;
+					a {
+						display: inline-block;
+						color: $snow;
+						font-size: 1em;
+						padding: 15px 20px 15px 35px;
+						text-decoration: none;
+						// icon styles
+						background-size: 35px;
+						background-repeat: no-repeat;
+						background-position: 2px;
+						&.info { background-image: url('../images/icons/info.png'); }
+						&.rooms { background-image: url('../images/icons/rooms.png'); }
+						&.dining { background-image: url('../images/icons/dining.png'); }
+						&.events { background-image: url('../images/icons/events.png'); }
+						&.attractions { background-image: url('../images/icons/attractions.png'); }
+						&:hover {
+							background-color: $green-light;
+						} //&:hover
+						@include breakpoint(0 $small) {
+							padding: 12px 18px;
+							&::after {
+								content: '\000a0';
+								display: block;
+							}
+							span {
+								display: none;
+							}
+						} //breakpoint(0 $small)
+
+						@include breakpoint($small $medium) {
+							padding-left: 10px;
+							&.icon {
+								background-image: none;
+							}
+						} //breakpoint($small $medium)
+					} //a
+				} //li
+			} //ul
+
+		} //.navbar
+	} //#nav
+} //header
+
+
+
+
+
+
+
+
+
+
+
