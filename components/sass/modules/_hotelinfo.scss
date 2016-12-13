@@ -1,0 +1,82 @@
+#hotelinfo {
+	padding-bottom: 0px;
+	@include background-image(linear-gradient(top, $snow, darken($snow, 40)));
+	.heading {
+		padding: 0px 1em;
+		h1 {
+			color: $blue;
+			font-weight: 500;
+			text-align: center;
+			margin: 0.5em 0px;
+			font-size: 3em;
+		}
+	} //.heading
+	#usefulinfo {
+		@include container;
+		@include clearfix();
+		padding: 0px 1em;
+		section {
+			h2 {
+				color: darken($blue-light, 30);
+				font-weight: 500;
+			} //h2
+			@include breakpoint($small) {
+				@include span(1 of 3);
+				h2 {
+					font-size: 1.5em;
+					line-height: 110%;
+					padding: 10px 0px;
+				}
+			} //breakpoint($small)
+			@include breakpoint(450px $small) {
+				h2 {
+					font-size: 1.3em;
+					line-height: 110%;
+					padding: 10px 0px;
+				} //h2
+				&.checklist {
+					@include span(1 of 2);
+				} //&.checklist
+			} //breakpoint(450px $small)
+			ul {
+				margin: 0px;
+				li {
+					list-style: square;
+					margin-left: 10%;
+					line-height: 115%;
+					margin-bottom: 5px;
+				}
+			} //ul
+		} //section
+		section#arrivalinfo {
+			ul {
+				margin: 0px;
+				li {
+					list-style: none;
+					border-top: 1px solid $snow;
+					padding: 15px 0px;
+					margin-left: 0px;
+					&:first-child {
+						border: none;
+					}
+				} //li
+			} //ul
+		} //section#arrivalinfo
+	} //#usefulinfo
+	#greenprogram {
+		background-color: $green;
+		background-color: darken($snow, 40%);
+		padding: 2em 0px;
+		.wrapcontent {
+			@include container(80%);
+			max-width: 800px;
+			background-color: $green-light;
+			@include border-radius(4px);
+			border: 1px solid $white;
+			padding: 1em 2em;
+		} //.wrapcontent
+	}
+	p {
+		color: $black;
+	}
+}

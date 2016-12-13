@@ -1,7 +1,7 @@
 header {
 	#nav {
 		@include clearfix();
-		@include background-image(linear-gradient(top, darken($green, 15%), $green-light));
+		@include background-image(linear-gradient(top, $blue, $blue-light));
 		width: 100%;
 		.navbar {
 			@include container();
@@ -12,7 +12,7 @@ header {
 				font-weight: 500;
 				text-align: center;
 				text-transform: uppercase;
-				background: $black;
+				background: $blue;
 				padding: 11px 0px;
 				a {
 					color: $snow;
@@ -50,10 +50,10 @@ header {
 						&.events { background-image: url('../images/icons/events.png'); }
 						&.attractions { background-image: url('../images/icons/attractions.png'); }
 						&:hover {
-							background-color: $green-light;
+							background-color: $blue-light;
 						} //&:hover
 						@include breakpoint(0 $small) {
-							padding: 12px 18px;
+							padding: 12px 18px 12px 27px;
 							&::after {
 								content: '\000a0';
 								display: block;

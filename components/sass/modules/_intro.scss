@@ -1,16 +1,18 @@
 header {
 	.fullheight {
 		@include backImage('../images/hotel/splash_hotelphoto.jpg');
-
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(center);
 		.hgroup {
 			padding: 100px 0px;
 			h1 {
-				color: $green-light;
+				color: lighten($blue, 10%);
 				font-size: 5em;
 				font-weight: 600;
 				line-height: 1.2em;
 				// @include single-text-shadow(1px, 2px, 2px, false, lighten($black, 10));
-				@include text-shadow(1px 2px 2px lighten($black, 10));
+				@include text-shadow(1px 2px 2px lighten($white, 10));
 				text-align: center;
 			} //h1
 			h2 {

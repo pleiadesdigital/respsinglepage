@@ -1,0 +1,28 @@
+#attractions {
+	@include clearfix();
+	@include container(100%);
+	padding: 0px;
+	@include backImage('../images/hotel/attractions.jpg');
+	@include display-flex();
+	@include align-items(center);
+	@include justify-content(center);
+	article {
+		@include container(80%);
+		padding: 20px;
+		margin: 200px auto;
+		background: rgba($snow, 0.3);
+		@include border-radius(4px);
+		@include breakpoint($medium) {
+			@include container(50%);
+		}
+		h2 {
+			color: $blue;
+			font-weight: 500;
+		}
+		p {
+			color: $blue;
+			font-weight: 300;
+		}
+
+	} //article
+} //#attractions
