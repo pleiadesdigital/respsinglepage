@@ -29,9 +29,9 @@ if (env==='development') {
 }
 
 jsSources = [
-	'components/scripts/jqloader.js',
+	// 'components/scripts/jqloader.js',
+	'components/scripts/jquery.scrollmagic.min.js',
 	'components/scripts/TweenMax.min.js',
-	'components/jquery.scrollmagic.min.js',
 	'components/scripts/script.js'
 ];
 
@@ -42,7 +42,7 @@ htmlSources = [outputDir + '*.html'];
 gulp.task('js', function(){
 	gulp.src(jsSources)
 		.pipe(concat('script.js'))
-		.pipe(browserify())
+		// .pipe(browserify())
 		.on('error', gutil.log)
 		.pipe(gulpif(env === 'production', uglify()))
 		.pipe(gulp.dest(outputDir + '/js'))
