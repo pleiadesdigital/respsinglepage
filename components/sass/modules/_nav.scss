@@ -3,6 +3,7 @@ header {
 		@include clearfix();
 		@include background-image(linear-gradient(top, $blue, $blue-light));
 		width: 100%;
+		z-index: 100; 
 		.navbar {
 			@include container();
 			// BRAND

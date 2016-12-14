@@ -586,8 +586,9 @@ header #nav {
   background-image: -webkit-linear-gradient(top, #0c273d, #54d0ed);
   background-image: linear-gradient(to bottom, #0c273d, #54d0ed);
   width: 100%;
+  z-index: 100;
 }
-/* line 6, ../../../components/sass/modules/_nav.scss */
+/* line 7, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar {
   max-width: 60em;
   margin-left: auto;
@@ -599,7 +600,7 @@ header #nav .navbar:after {
   display: block;
   clear: both;
 }
-/* line 9, ../../../components/sass/modules/_nav.scss */
+/* line 10, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar .brand {
   width: 33.33333%;
   float: left;
@@ -612,7 +613,7 @@ header #nav .navbar .brand {
   background: #0c273d;
   padding: 11px 0px;
 }
-/* line 17, ../../../components/sass/modules/_nav.scss */
+/* line 18, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar .brand a {
   color: #fafafa;
   text-decoration: none;
@@ -621,16 +622,16 @@ header #nav .navbar .brand a {
   font-size: 1.5em;
 }
 @media (max-width: 650px) {
-  /* line 17, ../../../components/sass/modules/_nav.scss */
+  /* line 18, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar .brand a {
     font-size: 1.2em;
   }
-  /* line 25, ../../../components/sass/modules/_nav.scss */
+  /* line 26, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar .brand a span {
     display: none;
   }
 }
-/* line 32, ../../../components/sass/modules/_nav.scss */
+/* line 33, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul {
   width: 66.66667%;
   float: left;
@@ -638,11 +639,11 @@ header #nav .navbar ul {
   padding-right: 0.83333%;
   padding: 0px;
 }
-/* line 35, ../../../components/sass/modules/_nav.scss */
+/* line 36, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li {
   float: left;
 }
-/* line 37, ../../../components/sass/modules/_nav.scss */
+/* line 38, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a {
   display: inline-block;
   color: #fafafa;
@@ -653,51 +654,51 @@ header #nav .navbar ul li a {
   background-repeat: no-repeat;
   background-position: 2px;
 }
-/* line 47, ../../../components/sass/modules/_nav.scss */
+/* line 48, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.info {
   background-image: url("../images/icons/info.png");
 }
-/* line 48, ../../../components/sass/modules/_nav.scss */
+/* line 49, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.rooms {
   background-image: url("../images/icons/rooms.png");
 }
-/* line 49, ../../../components/sass/modules/_nav.scss */
+/* line 50, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.dining {
   background-image: url("../images/icons/dining.png");
 }
-/* line 50, ../../../components/sass/modules/_nav.scss */
+/* line 51, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.events {
   background-image: url("../images/icons/events.png");
 }
-/* line 51, ../../../components/sass/modules/_nav.scss */
+/* line 52, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.attractions {
   background-image: url("../images/icons/attractions.png");
 }
-/* line 52, ../../../components/sass/modules/_nav.scss */
+/* line 53, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a:hover {
   background-color: #54d0ed;
 }
 @media (min-width: 0) and (max-width: 650px) {
-  /* line 37, ../../../components/sass/modules/_nav.scss */
+  /* line 38, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a {
     padding: 12px 18px 12px 27px;
   }
-  /* line 57, ../../../components/sass/modules/_nav.scss */
+  /* line 58, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a::after {
     content: '\000a0';
     display: block;
   }
-  /* line 61, ../../../components/sass/modules/_nav.scss */
+  /* line 62, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a span {
     display: none;
   }
 }
 @media (min-width: 650px) and (max-width: 960px) {
-  /* line 37, ../../../components/sass/modules/_nav.scss */
+  /* line 38, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a {
     padding-left: 10px;
   }
-  /* line 68, ../../../components/sass/modules/_nav.scss */
+  /* line 69, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a.icon {
     background-image: none;
   }
